@@ -1,0 +1,11 @@
+{% extends 'frontend/base.html' %} 
+
+{% load static %} 
+
+{% block pagecontent %} 
+    <button id="verify-btn" class="btn btn-primary">Verify All Files</button>
+{% endblock %}
+
+{% block scripts %} 
+    <script src="{% static 'frontend/js/verify.js' %}"></script>
+{% endblock %}

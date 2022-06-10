@@ -1,0 +1,27 @@
+{% extends 'frontend/base.html' %}
+
+{% load static %}
+
+{% block pagecontent %} 
+    <!-- <form id="login-form" action="#">
+        Username: <input type="text" name="username" id="username">
+        Password: <input type="password" name="password" id="password">
+        <button type="submit">Login</button>
+    </form> -->
+    <form id="login-form">
+        <div class="mb-3">
+          <label for="username" class="form-label">Username</label>
+          <input type="text" class="form-control" id="username" name="username" aria-describedby="emailHelp">
+          <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" class="form-control" id="password" name="password">
+        </div>
+        <button type="submit" class="btn btn-primary">Login</button>
+      </form>
+{% endblock %}
+
+{% block scripts %}
+    <script src="{% static 'frontend/js/login.js' %}"></script>
+{% endblock %}

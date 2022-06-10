@@ -1,0 +1,21 @@
+{% extends 'frontend/base.html' %}
+
+{% load static %}
+
+{% block pagecontent %} 
+    <!-- <form id="upload-form" action="#" method="post">
+        File : <input type="file" name="uploadfile" id="uploadfile">
+        <button type="submit">Upload</button>
+    </form> -->
+
+    <form id="upload-form" class="input-group">
+        <input type="file" class="form-control" id="inputGroupFile04" name="uploadfile" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+        <button class="btn btn-outline-secondary" type="submit" id="inputGroupFileAddon04">Upload</button>
+    </form>
+
+    <div id="files"></div>
+{% endblock %} 
+
+{% block scripts %}
+    <script src="{% static 'frontend/js/uploadfile.js' %}"></script>
+{% endblock %} 

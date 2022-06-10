@@ -1,0 +1,12 @@
+{% extends 'frontend/base.html' %} 
+
+{% load static %} 
+
+{% block pagecontent %} 
+    <div id="file-detail" data-blob-name="{{blob_name}}">
+    </div>
+{% endblock %}
+
+{% block scripts %} 
+    <script src="{% static 'frontend/js/detailfile.js' %}"></script>
+{% endblock %}
