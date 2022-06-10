@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'integrity-verifier-for-iot-env'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_1875EE71766F495BA1CBA2AC39951E87 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_554E7EFF64C5415E935D0746A8DD48C4 }}
